@@ -6,3 +6,5 @@ Welcome to the **MySQL Learning Repository**! This repo is designed to help you 
 1. Clone the repo:  
    ```sh  
    git clone https://github.com/Git-Raheman/mysql.git 
+
+--------------------------------------
