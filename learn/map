@@ -1,0 +1,26 @@
+#1. Database
+What it is: The organized collection of data. The whole filing cabinet.
+Analogy: A single library building.
+#2. Table
+What it is: A container within the database for a specific type of information.
+Analogy: A single bookshelf in the library dedicated to a specific topic, like "History" or "Science Fiction."
+Example: In a company database, you might have a employees table and a products table.
+#3. Column (or Field)
+What it is: A single piece of information you track in a table. It defines what kind of data is in that column.
+Analogy: The chapter titles in every book on the "History" bookshelf. Every book will have a "Title," "Author," and "Publication Date."
+Example: In the employees table, you would have columns like employee_id, first_name, last_name, and hire_date.
+#4. Row (or Record)
+What it is: A single entry in a table, containing the data for all the columns.
+Analogy: A single book on the bookshelf. It has a specific title, a specific author, and a specific publication date.
+Example: In the employees table, one row would be: 101, John, Smith, 2022-08-15.
+#5. RDBMS (Relational Database Management System)
+This is the big one. MySQL is an RDBMS.
+What it is: It's the "System" that manages everything. The "Relational" part means we can create relationships between tables.
+Analogy: It's the Librarian and the entire library system. The librarian (the software) knows that the book_checkout records are linked to the library_members records. You can ask the librarian, "Show me all the books checked out by John Smith," and the system can look at both tables to give you the answer.
+Why it's important for an Admin: You are the one who manages the RDBMS software itself. You install it, you tune it, you secure it. You are the "Head Librarian."
+#6. SQL (Structured Query Language)
+What it is: The language you use to talk to the RDBMS.
+Analogy: If the RDBMS is a French librarian, you need to speak French (SQL) to ask it questions or give it commands. You can't just speak English.
+Example Commands:
+SELECT first_name FROM employees; (Get a list of all employee first names).
+CREATE USER 'newadmin'@'localhost'; (An admin command to create a new user).
