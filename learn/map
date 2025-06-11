@@ -1,26 +1,62 @@
-#1. Database
-What it is: The organized collection of data. The whole filing cabinet.
-Analogy: A single library building.
-#2. Table
-What it is: A container within the database for a specific type of information.
-Analogy: A single bookshelf in the library dedicated to a specific topic, like "History" or "Science Fiction."
-Example: In a company database, you might have a employees table and a products table.
-#3. Column (or Field)
-What it is: A single piece of information you track in a table. It defines what kind of data is in that column.
-Analogy: The chapter titles in every book on the "History" bookshelf. Every book will have a "Title," "Author," and "Publication Date."
-Example: In the employees table, you would have columns like employee_id, first_name, last_name, and hire_date.
-#4. Row (or Record)
-What it is: A single entry in a table, containing the data for all the columns.
-Analogy: A single book on the bookshelf. It has a specific title, a specific author, and a specific publication date.
-Example: In the employees table, one row would be: 101, John, Smith, 2022-08-15.
-#5. RDBMS (Relational Database Management System)
-This is the big one. MySQL is an RDBMS.
-What it is: It's the "System" that manages everything. The "Relational" part means we can create relationships between tables.
-Analogy: It's the Librarian and the entire library system. The librarian (the software) knows that the book_checkout records are linked to the library_members records. You can ask the librarian, "Show me all the books checked out by John Smith," and the system can look at both tables to give you the answer.
-Why it's important for an Admin: You are the one who manages the RDBMS software itself. You install it, you tune it, you secure it. You are the "Head Librarian."
-#6. SQL (Structured Query Language)
-What it is: The language you use to talk to the RDBMS.
-Analogy: If the RDBMS is a French librarian, you need to speak French (SQL) to ask it questions or give it commands. You can't just speak English.
-Example Commands:
-SELECT first_name FROM employees; (Get a list of all employee first names).
-CREATE USER 'newadmin'@'localhost'; (An admin command to create a new user).
+# My MySQL DBA & DevOps Learning Roadmap
+
+This repository tracks my journey from beginner to a professional MySQL Database Administrator and DevOps specialist.
+
+---
+
+## Phase 1: The Absolute Fundamentals  фундамент (The Foundation)
+
+The goal of this phase is to build a solid foundation. I will understand what MySQL is, how to install it, how to speak its language (SQL), and how to perform the most basic administrative tasks.
+
+### ✅ Step 1: Core Concepts & Terminology
+
+- [x] **Goal:** Understand the "what" and "why" before the "how".
+- **Key Skills:**
+  - [ ] Define what a **Database** is (the digital filing cabinet).
+  - [ ] Define what an **RDBMS** is (the system managing the cabinets).
+  - [ ] Explain the difference between **MySQL** and **SQL**.
+  - [ ] Understand the structure: `Table`, `Row` (Record), and `Column` (Field).
+  - [ ] Explain the concept of a **Primary Key** (a unique ID for each row).
+
+### ⚙️ Step 2: Installation & First Contact
+
+- [ ] **Goal:** Get a working MySQL server and connect to it.
+- **Key Skills:**
+  - [ ] Install **MySQL Community Server** on my operating system (Windows/Mac/Linux).
+  - [ ] Install a **GUI Tool** like `MySQL Workbench` or `DBeaver`.
+  - [ ] Learn to start and stop the MySQL service.
+  - [ ] Successfully connect to the local MySQL server using both the command line and the GUI tool.
+  - [ ] Locate the primary configuration file (`my.cnf` or `my.ini`).
+
+### ���️ Step 3: The Language - Basic SQL
+
+- [ ] **Goal:** Learn the essential SQL commands to interact with data. This is how we talk to the database.
+- **Key Skills:**
+  - [ ] **Data Definition Language (DDL):** Commands that define the structure.
+    - [ ] `CREATE DATABASE`
+    - [ ] `CREATE TABLE`
+  - [ ] **Data Manipulation Language (DML):** Commands that manage the data itself.
+    - [ ] `INSERT` (add new rows)
+    - [ ] `SELECT` (read/query data)
+    - [ ] `UPDATE` (change existing rows)
+    - [ ] `DELETE` (remove rows)
+  - [ ] **Filtering Data:**
+    - [ ] `SELECT` with the `WHERE` clause.
+
+### ���️ Step 4: Database & Table Management
+
+- [ ] **Goal:** Learn how an admin creates and manages the database structure.
+- **Key Skills:**
+  - [ ] Design a simple two-table database (e.g., `authors` and `books`).
+  - [ ] Choose correct **Data Types** for columns (`INT`, `VARCHAR`, `TEXT`, `DATE`).
+  - [ ] Use `CREATE TABLE` with proper data types and a `PRIMARY KEY`.
+  - [ ] Use `ALTER TABLE` to add a new column to an existing table.
+  - [ ] Use `DROP TABLE` and `DROP DATABASE` (and understand how dangerous they are!).
+  - [ ] Understand how to see all databases and tables on the server.
+    ```sql
+    -- Example Admin Commands
+    SHOW DATABASES;
+    USE my_new_database;
+    SHOW TABLES;
+    DESCRIBE my_table_name; -- Shows the structure of a table
+    ```
