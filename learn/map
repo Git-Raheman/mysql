@@ -1,4 +1,4 @@
-# My MySQL DBA & DevOps Learning Roadmap
+My MySQL DBA & DevOps Learning Roadmap
 
 This repository tracks my journey from beginner to a professional MySQL Database Administrator and DevOps specialist.
 
@@ -28,7 +28,7 @@ The goal of this phase is to build a solid foundation. I will understand what My
   - [ ] Successfully connect to the local MySQL server using both the command line and the GUI tool.
   - [ ] Locate the primary configuration file (`my.cnf` or `my.ini`).
 
-### Ì∑£Ô∏è Step 3: The Language - Basic SQL
+### ÔøΩÔøΩÔøΩÔ∏è Step 3: The Language - Basic SQL
 
 - [ ] **Goal:** Learn the essential SQL commands to interact with data. This is how we talk to the database.
 - **Key Skills:**
@@ -43,7 +43,7 @@ The goal of this phase is to build a solid foundation. I will understand what My
   - [ ] **Filtering Data:**
     - [ ] `SELECT` with the `WHERE` clause.
 
-### Ì∑ÇÔ∏è Step 4: Database & Table Management
+### ÔøΩÔøΩÔøΩÔ∏è Step 4: Database & Table Management
 
 - [ ] **Goal:** Learn how an admin creates and manages the database structure.
 - **Key Skills:**
